@@ -6,8 +6,8 @@ new Chart(canvas, {
         labels: ["Venue A", "Venue B", "Venue C"],
         datasets: [{
             label: "Monthly bookings",
-            data: [120, 90, 60],
-            backgroundColor: ["#0d6efd", "#198754", "#ffc107"]
+            data: [127, 32, 67],
+            backgroundColor: ["#e200aa", "#406654", "#fa9d11"]
         }]
     },
     options: {
