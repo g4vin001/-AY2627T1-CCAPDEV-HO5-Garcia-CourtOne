@@ -42,3 +42,24 @@ new Chart(timeCanvas, {
     }
 });
 
+const cancelCanvas = document.getElementById("cancelLineChart");
+
+new Chart(cancelCanvas, {
+    type: "line",
+    data: {
+        labels: ["Week 1", "Week 2", "Week 3", "Week 4"],
+        datasets: [{
+            label: "Cancelled bookings (%)",
+            data: [7, 9, 6, 8],
+            borderColor: "#dc354671",
+            backgroundColor: "#5e4346"
+        }]
+    },
+    options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        scales: {
+            y: { beginAtZero: true }
+        }
+    }
+});
