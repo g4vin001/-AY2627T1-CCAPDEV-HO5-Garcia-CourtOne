@@ -20,3 +20,25 @@ new Chart(canvas, {
         }
     }
 });
+
+const timeCanvas = document.getElementById("timeBarChart");
+
+new Chart(timeCanvas, {
+    type: "bar",
+    data: {
+        labels: ["6-9 AM", "9 AM-12 PM", "12-3 PM", "3-6 PM", "6-9 PM"],
+        datasets: [{
+            label: "Bookings this month",
+            data: [30, 55, 85, 70, 30],
+            backgroundColor: "#00b7ff"
+        }]
+    },
+    options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        scales: {
+            y: { beginAtZero: true }
+        }
+    }
+});
+
